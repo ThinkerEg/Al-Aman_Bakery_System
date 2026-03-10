@@ -1,0 +1,27 @@
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.exe.config
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.exe
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.pdb
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.csprojResolveAssemblyReference.cache
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.Properties.Resources.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.csproj.GenerateResource.Cache
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.exe
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.pdb
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_Main.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_MATERIALS.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Guna.UI2.dll
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_SUPPLIERS.resources
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.exe.config
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.exe
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Al-Aman Bakery System.pdb
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\Guna.UI2.dll
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\bin\Debug\MaterialSkin.dll
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.csproj.AssemblyReference.cache
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_Main.resources
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_MATERIALS.resources
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_SUPPLIERS.resources
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.Properties.Resources.resources
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.csproj.GenerateResource.cache
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.csproj.CoreCompileInputs.cache
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman .CABE850A.Up2Date
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.exe
+H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.pdb

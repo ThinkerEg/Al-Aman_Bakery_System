@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Al_Aman_Bakery_System.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Safe_Audit</Value>
+    </Setting>
+    <Setting Name="Mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">562007</Value>
+    </Setting>
+    <Setting Name="Login" Type="System.String" Scope="User">
+      <Value Profile="(Default)">محمد عاطف</Value>
+    </Setting>
+    <Setting Name="Nickname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">المفكر</Value>
+    </Setting>
+    <Setting Name="Power_US" Type="System.String" Scope="User">
+      <Value Profile="(Default)">صلاحيات كاملة</Value>
+    </Setting>
+    <Setting Name="Backup" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HeaderColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">44, 62, 80</Value>
+    </Setting>
+    <Setting Name="PrimaryColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">52, 152, 219</Value>
+    </Setting>
+    <Setting Name="BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">244, 247, 249</Value>
+    </Setting>
+    <Setting Name="EditColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">255, 152, 0</Value>
+    </Setting>
+    <Setting Name="AddColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">39, 174, 96</Value>
+    </Setting>
+    <Setting Name="OtherColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">158, 158, 158</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
