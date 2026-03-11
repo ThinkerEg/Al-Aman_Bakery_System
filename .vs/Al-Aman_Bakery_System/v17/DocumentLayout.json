@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "H:\\Al-Aman_Bakery_System\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E3124430-A54B-436B-894C-6C0E08C2AA80}|Al-Aman Bakery System\\Al-Aman Bakery System.csproj|h:\\al-aman_bakery_system\\al-aman bakery system\\pl\\frm_materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E3124430-A54B-436B-894C-6C0E08C2AA80}|Al-Aman Bakery System\\Al-Aman Bakery System.csproj|solutionrelative:al-aman bakery system\\pl\\frm_materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3124430-A54B-436B-894C-6C0E08C2AA80}|Al-Aman Bakery System\\Al-Aman Bakery System.csproj|H:\\Al-Aman_Bakery_System\\al-aman bakery system\\pl\\frm_materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3124430-A54B-436B-894C-6C0E08C2AA80}|Al-Aman Bakery System\\Al-Aman Bakery System.csproj|solutionrelative:al-aman bakery system\\pl\\frm_materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,32 +9,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FRM_MATERIALS.cs",
-              "DocumentMoniker": "H:\\Al-Aman_Bakery_System\\Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "RelativeDocumentMoniker": "Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "ToolTip": "H:\\Al-Aman_Bakery_System\\Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "RelativeToolTip": "Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T21:34:38.63Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FRM_MATERIALS.cs [Design]",
-              "DocumentMoniker": "H:\\Al-Aman_Bakery_System\\Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "RelativeDocumentMoniker": "Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs",
-              "ToolTip": "H:\\Al-Aman_Bakery_System\\Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs [Design]",
-              "RelativeToolTip": "Al-Aman Bakery System\\PL\\FRM_MATERIALS.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T21:32:19.203Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
