@@ -75,6 +75,18 @@
     <Compile Include="PL\FRM_PRODUCTS.Designer.cs">
       <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_PURCHASES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_PURCHASES.Designer.cs">
+      <DependentUpon>FRM_PURCHASES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_RECIPE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_RECIPE.Designer.cs">
+      <DependentUpon>FRM_RECIPE.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_SUPPLIERS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_PRODUCTS.resx">
       <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_PURCHASES.resx">
+      <DependentUpon>FRM_PURCHASES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_RECIPE.resx">
+      <DependentUpon>FRM_RECIPE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_SUPPLIERS.resx">
       <DependentUpon>FRM_SUPPLIERS.cs</DependentUpon>
