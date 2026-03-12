@@ -16,36 +16,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MATERIALS));
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btn_Close = new Guna.UI2.WinForms.Guna2CircleButton();
             this.groupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.num_GramPerBag = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Edit = new Guna.UI2.WinForms.Guna2Button();
             this.btn_New = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
             this.num_MinQty = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.num_Qty = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.txt_MatName = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_Materials = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -54,18 +54,15 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.label5 = new System.Windows.Forms.Label();
-            this.num_Price = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.pnlHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_GramPerBag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MinQty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Qty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Materials)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Price)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -118,16 +115,18 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.num_Price);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.guna2TextBox3);
+            this.groupBox1.Controls.Add(this.guna2TextBox2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.num_GramPerBag);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.btn_Edit);
             this.groupBox1.Controls.Add(this.btn_New);
             this.groupBox1.Controls.Add(this.btn_Add);
             this.groupBox1.Controls.Add(this.num_MinQty);
-            this.groupBox1.Controls.Add(this.num_Qty);
             this.groupBox1.Controls.Add(this.txt_MatName);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
@@ -135,10 +134,95 @@
             this.groupBox1.Location = new System.Drawing.Point(458, 50);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(384, 550);
+            this.groupBox1.Size = new System.Drawing.Size(384, 598);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.Text = "بيانات الخامة الأساسية";
             this.groupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.BorderRadius = 15;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "أدخل اسم الوحدة الصغرى هنا...";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(154, 232);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox3.TabIndex = 15;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BorderRadius = 15;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "أدخل اسم الوحدة الكبرى هنا...";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(154, 162);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox2.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(254, 138);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 21);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "الوحدة الكبرى:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(242, 208);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 21);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "الوحدة الصغرى:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(202, 281);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 21);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "عدد الوحدات الصغرى:";
+            // 
+            // num_GramPerBag
+            // 
+            this.num_GramPerBag.BackColor = System.Drawing.Color.Transparent;
+            this.num_GramPerBag.BorderRadius = 15;
+            this.num_GramPerBag.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.num_GramPerBag.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.num_GramPerBag.Location = new System.Drawing.Point(254, 305);
+            this.num_GramPerBag.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.num_GramPerBag.Name = "num_GramPerBag";
+            this.num_GramPerBag.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.num_GramPerBag.Size = new System.Drawing.Size(100, 36);
+            this.num_GramPerBag.TabIndex = 13;
             // 
             // label1
             // 
@@ -150,21 +234,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "اسم الخامة:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(301, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "الكمية:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(282, 214);
+            this.label3.Location = new System.Drawing.Point(282, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 21);
             this.label3.TabIndex = 2;
@@ -176,7 +250,7 @@
             this.btn_Edit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btn_Edit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(126, 403);
+            this.btn_Edit.Location = new System.Drawing.Point(126, 512);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(100, 40);
             this.btn_Edit.TabIndex = 0;
@@ -188,7 +262,7 @@
             this.btn_New.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(165)))), ((int)(((byte)(166)))));
             this.btn_New.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btn_New.ForeColor = System.Drawing.Color.White;
-            this.btn_New.Location = new System.Drawing.Point(14, 403);
+            this.btn_New.Location = new System.Drawing.Point(14, 512);
             this.btn_New.Name = "btn_New";
             this.btn_New.Size = new System.Drawing.Size(100, 40);
             this.btn_New.TabIndex = 1;
@@ -200,7 +274,7 @@
             this.btn_Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btn_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_Add.Location = new System.Drawing.Point(250, 403);
+            this.btn_Add.Location = new System.Drawing.Point(250, 512);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(100, 40);
             this.btn_Add.TabIndex = 2;
@@ -213,7 +287,7 @@
             this.num_MinQty.BorderRadius = 15;
             this.num_MinQty.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.num_MinQty.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_MinQty.Location = new System.Drawing.Point(254, 238);
+            this.num_MinQty.Location = new System.Drawing.Point(254, 368);
             this.num_MinQty.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -223,18 +297,6 @@
             this.num_MinQty.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.num_MinQty.Size = new System.Drawing.Size(100, 36);
             this.num_MinQty.TabIndex = 3;
-            // 
-            // num_Qty
-            // 
-            this.num_Qty.BackColor = System.Drawing.Color.Transparent;
-            this.num_Qty.BorderRadius = 15;
-            this.num_Qty.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.num_Qty.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_Qty.Location = new System.Drawing.Point(254, 168);
-            this.num_Qty.Name = "num_Qty";
-            this.num_Qty.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.num_Qty.Size = new System.Drawing.Size(100, 36);
-            this.num_Qty.TabIndex = 4;
             // 
             // txt_MatName
             // 
@@ -252,32 +314,32 @@
             // 
             // dgv_Materials
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgv_Materials.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Materials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgv_Materials.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(16)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Materials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_Materials.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Materials.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(37)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Materials.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_Materials.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_Materials.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(62)))));
             this.dgv_Materials.Location = new System.Drawing.Point(0, 25);
             this.dgv_Materials.Name = "dgv_Materials";
             this.dgv_Materials.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dgv_Materials.RowHeadersVisible = false;
-            this.dgv_Materials.Size = new System.Drawing.Size(458, 357);
+            this.dgv_Materials.Size = new System.Drawing.Size(458, 405);
             this.dgv_Materials.TabIndex = 0;
             this.dgv_Materials.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             this.dgv_Materials.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
@@ -301,12 +363,6 @@
             this.dgv_Materials.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_Materials.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(117)))), ((int)(((byte)(119)))));
             this.dgv_Materials.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.pnlHeader;
-            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // guna2GroupBox1
             // 
@@ -368,14 +424,14 @@
             this.panel1.Location = new System.Drawing.Point(0, 218);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panel1.Size = new System.Drawing.Size(458, 382);
+            this.panel1.Size = new System.Drawing.Size(458, 430);
             this.panel1.TabIndex = 7;
             // 
             // bindingNavigator1
             // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.AddNewItem = null;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -385,9 +441,7 @@
             this.bindingNavigatorSeparator1,
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
+            this.bindingNavigatorSeparator2});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -399,30 +453,12 @@
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -484,36 +520,9 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(269, 287);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 21);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "سعر الشراء:";
-            // 
-            // num_Price
-            // 
-            this.num_Price.BackColor = System.Drawing.Color.Transparent;
-            this.num_Price.BorderRadius = 15;
-            this.num_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.num_Price.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_Price.Location = new System.Drawing.Point(254, 311);
-            this.num_Price.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.num_Price.Name = "num_Price";
-            this.num_Price.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.num_Price.Size = new System.Drawing.Size(100, 36);
-            this.num_Price.TabIndex = 7;
-            // 
             // FRM_MATERIALS
             // 
-            this.ClientSize = new System.Drawing.Size(842, 600);
+            this.ClientSize = new System.Drawing.Size(842, 648);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.groupBox1);
@@ -526,8 +535,8 @@
             this.pnlHeader.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_GramPerBag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MinQty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Qty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Materials)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
@@ -536,7 +545,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Price)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -550,13 +558,9 @@
         private Guna.UI2.WinForms.Guna2Button btn_New;
         private Guna.UI2.WinForms.Guna2Button btn_Add;
         private Guna.UI2.WinForms.Guna2NumericUpDown num_MinQty;
-        private Guna.UI2.WinForms.Guna2NumericUpDown num_Qty;
         private Guna.UI2.WinForms.Guna2TextBox txt_MatName;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_Materials;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private System.Windows.Forms.Label label4;
@@ -564,9 +568,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -575,7 +577,12 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private Guna.UI2.WinForms.Guna2NumericUpDown num_Price;
-        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2NumericUpDown num_GramPerBag;
+
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
     }
 }

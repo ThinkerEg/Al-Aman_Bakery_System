@@ -57,6 +57,18 @@
     <Compile Include="BL\CLS_MATERIALS.cs" />
     <Compile Include="BL\HelperMethods.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />
+    <Compile Include="PL\FRM_DISTRIBUTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_DISTRIBUTION.Designer.cs">
+      <DependentUpon>FRM_DISTRIBUTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EXPENSES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EXPENSES.Designer.cs">
+      <DependentUpon>FRM_EXPENSES.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,12 @@
     </Compile>
     <Compile Include="PL\FRM_MATERIALS.Designer.cs">
       <DependentUpon>FRM_MATERIALS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_PRODUCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_PRODUCTION.Designer.cs">
+      <DependentUpon>FRM_PRODUCTION.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\FRM_PRODUCTS.cs">
       <SubType>Form</SubType>
@@ -87,6 +105,18 @@
     <Compile Include="PL\FRM_RECIPE.Designer.cs">
       <DependentUpon>FRM_RECIPE.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_SALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SALES.Designer.cs">
+      <DependentUpon>FRM_SALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_STORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_STORES.Designer.cs">
+      <DependentUpon>FRM_STORES.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_SUPPLIERS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,11 +125,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\FRM_DISTRIBUTION.resx">
+      <DependentUpon>FRM_DISTRIBUTION.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_Main.resx">
       <DependentUpon>FRM_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_MATERIALS.resx">
       <DependentUpon>FRM_MATERIALS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_PRODUCTION.resx">
+      <DependentUpon>FRM_PRODUCTION.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_PRODUCTS.resx">
       <DependentUpon>FRM_PRODUCTS.cs</DependentUpon>

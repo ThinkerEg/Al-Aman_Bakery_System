@@ -17,10 +17,11 @@
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btn_Close = new Guna.UI2.WinForms.Guna2CircleButton();
             this.gb_BillInfo = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -42,7 +43,8 @@
             this.pnl_Footer = new System.Windows.Forms.Panel();
             this.lbl_Total = new System.Windows.Forms.Label();
             this.txt_TotalBill = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pnlHeader.SuspendLayout();
             this.gb_BillInfo.SuspendLayout();
             this.gb_ItemEntry.SuspendLayout();
@@ -63,6 +65,18 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(950, 45);
             this.pnlHeader.TabIndex = 4;
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.btn_Minimize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Minimize.ForeColor = System.Drawing.Color.White;
+            this.btn_Minimize.Location = new System.Drawing.Point(50, 8);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.TabIndex = 2;
+            this.btn_Minimize.Text = "—";
+            this.btn_Minimize.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // lblTitle
             // 
@@ -141,7 +155,9 @@
             // 
             this.dtp_BillDate.BorderRadius = 15;
             this.dtp_BillDate.Checked = true;
+            this.dtp_BillDate.FillColor = System.Drawing.Color.LemonChiffon;
             this.dtp_BillDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_BillDate.ForeColor = System.Drawing.Color.Black;
             this.dtp_BillDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtp_BillDate.Location = new System.Drawing.Point(450, 71);
             this.dtp_BillDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -177,6 +193,8 @@
             // 
             // gb_ItemEntry
             // 
+            this.gb_ItemEntry.Controls.Add(this.label1);
+            this.gb_ItemEntry.Controls.Add(this.guna2ComboBox1);
             this.gb_ItemEntry.Controls.Add(this.lbl_ItemName);
             this.gb_ItemEntry.Controls.Add(this.txt_ItemName);
             this.gb_ItemEntry.Controls.Add(this.lbl_Qty);
@@ -198,7 +216,7 @@
             // lbl_ItemName
             // 
             this.lbl_ItemName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_ItemName.Location = new System.Drawing.Point(550, 68);
+            this.lbl_ItemName.Location = new System.Drawing.Point(634, 68);
             this.lbl_ItemName.Name = "lbl_ItemName";
             this.lbl_ItemName.Size = new System.Drawing.Size(150, 20);
             this.lbl_ItemName.TabIndex = 0;
@@ -210,19 +228,19 @@
             this.txt_ItemName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_ItemName.DefaultText = "";
             this.txt_ItemName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_ItemName.Location = new System.Drawing.Point(550, 93);
+            this.txt_ItemName.Location = new System.Drawing.Point(634, 93);
             this.txt_ItemName.Name = "txt_ItemName";
             this.txt_ItemName.PlaceholderText = "اسم المادة الخام (مثال: دقيق فاخر)";
             this.txt_ItemName.SelectedText = "";
-            this.txt_ItemName.Size = new System.Drawing.Size(350, 36);
+            this.txt_ItemName.Size = new System.Drawing.Size(304, 36);
             this.txt_ItemName.TabIndex = 1;
             // 
             // lbl_Qty
             // 
             this.lbl_Qty.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_Qty.Location = new System.Drawing.Point(400, 68);
+            this.lbl_Qty.Location = new System.Drawing.Point(311, 68);
             this.lbl_Qty.Name = "lbl_Qty";
-            this.lbl_Qty.Size = new System.Drawing.Size(120, 20);
+            this.lbl_Qty.Size = new System.Drawing.Size(93, 20);
             this.lbl_Qty.TabIndex = 2;
             this.lbl_Qty.Text = "الكمية:";
             // 
@@ -232,7 +250,7 @@
             this.num_Qty.BorderRadius = 15;
             this.num_Qty.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.num_Qty.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.num_Qty.Location = new System.Drawing.Point(400, 93);
+            this.num_Qty.Location = new System.Drawing.Point(290, 93);
             this.num_Qty.Name = "num_Qty";
             this.num_Qty.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.num_Qty.Size = new System.Drawing.Size(120, 36);
@@ -241,9 +259,9 @@
             // lbl_Price
             // 
             this.lbl_Price.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lbl_Price.Location = new System.Drawing.Point(250, 68);
+            this.lbl_Price.Location = new System.Drawing.Point(161, 68);
             this.lbl_Price.Name = "lbl_Price";
-            this.lbl_Price.Size = new System.Drawing.Size(120, 20);
+            this.lbl_Price.Size = new System.Drawing.Size(93, 20);
             this.lbl_Price.TabIndex = 4;
             this.lbl_Price.Text = "سعر الوحدة:";
             // 
@@ -253,7 +271,7 @@
             this.num_Price.BorderRadius = 15;
             this.num_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.num_Price.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.num_Price.Location = new System.Drawing.Point(250, 93);
+            this.num_Price.Location = new System.Drawing.Point(140, 93);
             this.num_Price.Name = "num_Price";
             this.num_Price.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.num_Price.Size = new System.Drawing.Size(120, 36);
@@ -264,32 +282,32 @@
             this.btn_SaveBill.BorderRadius = 15;
             this.btn_SaveBill.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_SaveBill.ForeColor = System.Drawing.Color.White;
-            this.btn_SaveBill.Location = new System.Drawing.Point(75, 89);
+            this.btn_SaveBill.Location = new System.Drawing.Point(12, 89);
             this.btn_SaveBill.Name = "btn_SaveBill";
-            this.btn_SaveBill.Size = new System.Drawing.Size(140, 40);
+            this.btn_SaveBill.Size = new System.Drawing.Size(113, 40);
             this.btn_SaveBill.TabIndex = 6;
             this.btn_SaveBill.Text = "حفظ الصنف";
             // 
             // dgv_BillDetails
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
-            this.dgv_BillDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_BillDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_BillDetails.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(48)))), ((int)(((byte)(52)))));
+            this.dgv_BillDetails.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_BillDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_BillDetails.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_BillDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv_BillDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_BillDetails.Location = new System.Drawing.Point(0, 309);
@@ -353,17 +371,29 @@
             this.txt_TotalBill.Size = new System.Drawing.Size(234, 40);
             this.txt_TotalBill.TabIndex = 1;
             // 
-            // btn_Minimize
+            // label1
             // 
-            this.btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
-            this.btn_Minimize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_Minimize.Location = new System.Drawing.Point(50, 8);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.TabIndex = 2;
-            this.btn_Minimize.Text = "—";
-            this.btn_Minimize.TextOffset = new System.Drawing.Point(0, -2);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(518, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "الوحدة:";
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 15;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(416, 93);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(199, 36);
+            this.guna2ComboBox1.TabIndex = 8;
             // 
             // FRM_PURCHASES
             // 
@@ -413,5 +443,7 @@
         private System.Windows.Forms.Label lbl_Qty;
         private System.Windows.Forms.Label lbl_Price;
         private Guna.UI2.WinForms.Guna2CircleButton btn_Minimize;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }

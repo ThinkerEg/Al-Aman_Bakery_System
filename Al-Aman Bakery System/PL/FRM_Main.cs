@@ -27,5 +27,25 @@ namespace Al_Aman_Bakery_System.PL
         {
             HelperMethods.OpenChildForm(new FRM_SUPPLIERS());
         }
+
+        private void itemProducts_Click(object sender, EventArgs e)
+        {
+            HelperMethods.OpenChildForm(new FRM_PRODUCTS());
+        }
+
+        private void تسجيلمبيعاتToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void تسحيلالمشترياتToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelperMethods.OpenChildForm(new FRM_PURCHASES());
+        }
+
+        private void نسجيلوصفةمنتجToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelperMethods.OpenChildForm(new FRM_RECIPE());
+        }
     }
 }

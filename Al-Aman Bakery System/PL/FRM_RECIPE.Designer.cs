@@ -21,6 +21,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btn_Close = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lbl_Product = new System.Windows.Forms.Label();
@@ -32,7 +33,6 @@
             this.num_Qty = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.btn_AddLine = new Guna.UI2.WinForms.Guna2Button();
             this.btn_SaveRecipe = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_RecipeDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_Qty)).BeginInit();
@@ -49,6 +49,18 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(800, 60);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.btn_Minimize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Minimize.ForeColor = System.Drawing.Color.White;
+            this.btn_Minimize.Location = new System.Drawing.Point(50, 15);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.TabIndex = 3;
+            this.btn_Minimize.Text = "—";
+            this.btn_Minimize.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // lblTitle
             // 
@@ -75,7 +87,7 @@
             // lbl_Product
             // 
             this.lbl_Product.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lbl_Product.Location = new System.Drawing.Point(50, 80);
+            this.lbl_Product.Location = new System.Drawing.Point(688, 68);
             this.lbl_Product.Name = "lbl_Product";
             this.lbl_Product.Size = new System.Drawing.Size(100, 23);
             this.lbl_Product.TabIndex = 1;
@@ -84,14 +96,16 @@
             // cmb_Product
             // 
             this.cmb_Product.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_Product.BorderRadius = 15;
             this.cmb_Product.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmb_Product.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Product.FocusedColor = System.Drawing.Color.Empty;
             this.cmb_Product.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmb_Product.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmb_Product.ItemHeight = 30;
-            this.cmb_Product.Location = new System.Drawing.Point(50, 105);
+            this.cmb_Product.Location = new System.Drawing.Point(488, 94);
             this.cmb_Product.Name = "cmb_Product";
+            this.cmb_Product.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cmb_Product.Size = new System.Drawing.Size(300, 36);
             this.cmb_Product.TabIndex = 2;
             // 
@@ -116,11 +130,12 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_RecipeDetails.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_RecipeDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_RecipeDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_RecipeDetails.Location = new System.Drawing.Point(50, 160);
+            this.dgv_RecipeDetails.Location = new System.Drawing.Point(0, 228);
             this.dgv_RecipeDetails.Name = "dgv_RecipeDetails";
             this.dgv_RecipeDetails.RowHeadersVisible = false;
-            this.dgv_RecipeDetails.Size = new System.Drawing.Size(700, 280);
+            this.dgv_RecipeDetails.Size = new System.Drawing.Size(800, 372);
             this.dgv_RecipeDetails.TabIndex = 3;
             this.dgv_RecipeDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_RecipeDetails.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -147,7 +162,7 @@
             // lbl_Material
             // 
             this.lbl_Material.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lbl_Material.Location = new System.Drawing.Point(50, 460);
+            this.lbl_Material.Location = new System.Drawing.Point(688, 138);
             this.lbl_Material.Name = "lbl_Material";
             this.lbl_Material.Size = new System.Drawing.Size(100, 23);
             this.lbl_Material.TabIndex = 4;
@@ -156,21 +171,23 @@
             // cmb_Material
             // 
             this.cmb_Material.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_Material.BorderRadius = 15;
             this.cmb_Material.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmb_Material.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Material.FocusedColor = System.Drawing.Color.Empty;
             this.cmb_Material.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmb_Material.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmb_Material.ItemHeight = 30;
-            this.cmb_Material.Location = new System.Drawing.Point(50, 485);
+            this.cmb_Material.Location = new System.Drawing.Point(488, 163);
             this.cmb_Material.Name = "cmb_Material";
-            this.cmb_Material.Size = new System.Drawing.Size(250, 36);
+            this.cmb_Material.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmb_Material.Size = new System.Drawing.Size(300, 36);
             this.cmb_Material.TabIndex = 5;
             // 
             // lbl_Qty
             // 
             this.lbl_Qty.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lbl_Qty.Location = new System.Drawing.Point(320, 460);
+            this.lbl_Qty.Location = new System.Drawing.Point(377, 138);
             this.lbl_Qty.Name = "lbl_Qty";
             this.lbl_Qty.Size = new System.Drawing.Size(100, 23);
             this.lbl_Qty.TabIndex = 6;
@@ -179,46 +196,38 @@
             // num_Qty
             // 
             this.num_Qty.BackColor = System.Drawing.Color.Transparent;
+            this.num_Qty.BorderRadius = 15;
             this.num_Qty.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.num_Qty.DecimalPlaces = 2;
             this.num_Qty.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.num_Qty.Location = new System.Drawing.Point(320, 485);
+            this.num_Qty.Location = new System.Drawing.Point(377, 163);
             this.num_Qty.Name = "num_Qty";
+            this.num_Qty.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.num_Qty.Size = new System.Drawing.Size(100, 36);
             this.num_Qty.TabIndex = 7;
             // 
             // btn_AddLine
             // 
+            this.btn_AddLine.BorderRadius = 15;
             this.btn_AddLine.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_AddLine.ForeColor = System.Drawing.Color.White;
-            this.btn_AddLine.Location = new System.Drawing.Point(450, 485);
+            this.btn_AddLine.Location = new System.Drawing.Point(259, 163);
             this.btn_AddLine.Name = "btn_AddLine";
-            this.btn_AddLine.Size = new System.Drawing.Size(150, 36);
+            this.btn_AddLine.Size = new System.Drawing.Size(96, 36);
             this.btn_AddLine.TabIndex = 8;
             this.btn_AddLine.Text = "إضافة خامة";
             // 
             // btn_SaveRecipe
             // 
+            this.btn_SaveRecipe.BorderRadius = 15;
             this.btn_SaveRecipe.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.btn_SaveRecipe.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_SaveRecipe.ForeColor = System.Drawing.Color.White;
-            this.btn_SaveRecipe.Location = new System.Drawing.Point(300, 540);
+            this.btn_SaveRecipe.Location = new System.Drawing.Point(12, 163);
             this.btn_SaveRecipe.Name = "btn_SaveRecipe";
-            this.btn_SaveRecipe.Size = new System.Drawing.Size(200, 45);
+            this.btn_SaveRecipe.Size = new System.Drawing.Size(129, 45);
             this.btn_SaveRecipe.TabIndex = 9;
             this.btn_SaveRecipe.Text = "حفظ الوصفة";
-            // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
-            this.btn_Minimize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_Minimize.Location = new System.Drawing.Point(50, 15);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.TabIndex = 3;
-            this.btn_Minimize.Text = "—";
-            this.btn_Minimize.TextOffset = new System.Drawing.Point(0, -2);
             // 
             // FRM_RECIPE
             // 
