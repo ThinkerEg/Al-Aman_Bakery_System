@@ -32,7 +32,7 @@ namespace Al_Aman_Bakery_System.PL
                     return;
                 }
 
-                mat.ADD_MATERIAL(txt_MatName.Text, num_Qty.Value, num_MinQty.Value);
+              //  mat.ADD_MATERIAL(txt_MatName.Text, num_Qty.Value, num_MinQty.Value);
                 MessageBox.Show("تم حفظ الخامة بنجاح", "عملية ناجحة", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 LoadData(); // تحديث الجدول بعد الحفظ

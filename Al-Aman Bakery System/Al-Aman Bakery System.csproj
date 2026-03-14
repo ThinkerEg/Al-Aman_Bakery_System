@@ -99,6 +99,12 @@
     <Compile Include="PL\FRM_PURCHASES.Designer.cs">
       <DependentUpon>FRM_PURCHASES.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_RAW_PRODUCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_RAW_PRODUCTION.Designer.cs">
+      <DependentUpon>FRM_RAW_PRODUCTION.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_RECIPE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_PURCHASES.resx">
       <DependentUpon>FRM_PURCHASES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_RAW_PRODUCTION.resx">
+      <DependentUpon>FRM_RAW_PRODUCTION.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_RECIPE.resx">
       <DependentUpon>FRM_RECIPE.cs</DependentUpon>

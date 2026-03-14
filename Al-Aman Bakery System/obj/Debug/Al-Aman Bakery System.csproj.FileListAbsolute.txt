@@ -25,3 +25,9 @@ H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.c
 H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman .CABE850A.Up2Date
 H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.exe
 H:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al-Aman Bakery System.pdb
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_DISTRIBUTION.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_PRODUCTION.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_PRODUCTS.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_PURCHASES.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_RAW_PRODUCTION.resources
+E:\Al-Aman_Bakery_System\Al-Aman Bakery System\obj\Debug\Al_Aman_Bakery_System.PL.FRM_RECIPE.resources
