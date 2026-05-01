@@ -9,7 +9,6 @@ namespace Al_Aman_Bakery_System.BL
         public void ADD_MATERIAL(string Mat_Name, decimal Mat_Qty, decimal Min_Qty)
         {
             DAL.DataAccessLayer DAL = new DAL.DataAccessLayer();
-
             SqlParameter[] param = new SqlParameter[3];
             param[0] = new SqlParameter("@Name", SqlDbType.NVarChar, 100) { Value = Mat_Name };
             param[1] = new SqlParameter("@Qty", SqlDbType.Decimal) { Value = Mat_Qty };

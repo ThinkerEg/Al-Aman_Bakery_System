@@ -54,6 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Class_Products.cs" />
+    <Compile Include="BL\Class_RawProduction.cs" />
+    <Compile Include="BL\Class_Suppliers.cs" />
     <Compile Include="BL\CLS_MATERIALS.cs" />
     <Compile Include="BL\HelperMethods.cs" />
     <Compile Include="DAL\DataAccessLayer.cs" />

@@ -23,7 +23,7 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.btn_Minimize = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btn_Close = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btn_close = new Guna.UI2.WinForms.Guna2CircleButton();
             this.lbl_Product = new System.Windows.Forms.Label();
             this.cmb_Product = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgv_RecipeDetails = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -44,7 +44,7 @@
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.pnlHeader.Controls.Add(this.btn_Minimize);
             this.pnlHeader.Controls.Add(this.lblTitle);
-            this.pnlHeader.Controls.Add(this.btn_Close);
+            this.pnlHeader.Controls.Add(this.btn_close);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
@@ -74,16 +74,16 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "ضبط وصفة إنتاج المنتج";
             // 
-            // btn_Close
+            // btn_close
             // 
-            this.btn_Close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Close.ForeColor = System.Drawing.Color.White;
-            this.btn_Close.Location = new System.Drawing.Point(10, 15);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(30, 30);
-            this.btn_Close.TabIndex = 1;
-            this.btn_Close.Text = "X";
+            this.btn_close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Location = new System.Drawing.Point(10, 15);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(30, 30);
+            this.btn_close.TabIndex = 1;
+            this.btn_close.Text = "X";
             // 
             // lbl_Product
             // 
@@ -270,7 +270,7 @@
 
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblTitle;
-        private Guna.UI2.WinForms.Guna2CircleButton btn_Close;
+        private Guna.UI2.WinForms.Guna2CircleButton btn_close;
 
         private System.Windows.Forms.Label lbl_Product;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_Product;

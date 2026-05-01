@@ -112,6 +112,7 @@
             this.btn_Save.Size = new System.Drawing.Size(120, 40);
             this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "حفظ (إضافة)";
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Edit
             // 

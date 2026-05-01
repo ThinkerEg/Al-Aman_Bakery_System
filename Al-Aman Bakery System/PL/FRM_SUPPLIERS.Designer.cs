@@ -260,6 +260,7 @@
             this.btn_New.Size = new System.Drawing.Size(106, 40);
             this.btn_New.TabIndex = 5;
             this.btn_New.Text = "جديد";
+            this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
             // btn_Add
             // 
@@ -272,6 +273,7 @@
             this.btn_Add.Size = new System.Drawing.Size(106, 40);
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "إضافة";
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // txt_SuppAddress
             // 
